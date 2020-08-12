@@ -1,0 +1,21 @@
+{
+  "name": "visixjs",
+  "version": "1.0.0",
+  "description": "JS library for drawing connected node graphs using PixiJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drawing",
+    "connected",
+    "node",
+    "graphs"
+  ],
+  "author": "Lubo",
+  "license": "MIT",
+  "dependencies": {
+    "pixi.js": "^5.0.0-rc"
+  }
+}
