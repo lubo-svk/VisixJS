@@ -3,6 +3,10 @@ class Output {
 
     constructor() {
         this.connections = [];
+        this.element = null;
+        this.id = "";
+        this.type = null;
+        this.name = "";
     }
 
     setId(id) {
@@ -14,11 +18,11 @@ class Output {
     }
 
     setVarType(type) {
-        if(this.type !== undefined) {
+        if(this.type !== null) {
             if(this.type.getType() == type.getType()) return;
         }
         this.type = type;
-        if(this.element !== undefined) {
+        if(this.element !== null) {
             type.setEleent(this.element);
             this.element.updateIO();
         }
@@ -38,7 +42,7 @@ class Output {
 
     setElement(element) {
         this.element = element;
-        if(this.type !== undefined) {
+        if(this.type !== null) {
             this.type.setElement(this.element);
         }
     }

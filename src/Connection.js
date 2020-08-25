@@ -4,7 +4,10 @@ const Output = require('./Output.js');
 class Connection {
 
     constructor() {
-        this.points = [];
+        this.id = "";
+        this.activated = false;
+        this.output = null;
+        this.input = null;
     }
 
     setId(id) {
